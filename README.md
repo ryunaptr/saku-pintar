@@ -74,20 +74,21 @@ cp .env.example .env
 python run.py             
 ```
 
-Variables in `.env`: `ANTHROPIC_API_KEY`, `DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`. Match these to `.env.example`.
+Configure the following variables in `.env`:
 
-Database schema: [`docs/schema.sql`](docs/schema.sql) *(add once created)*.
+| Variable | Description |
+|---|---|
+| `DATABASE_URL` | Database connection string |
+| `SECRET_KEY` | Secret key used to sign JWT tokens |
+| `ALGORITHM` | JWT signing algorithm |
+| `ACCESS_TOKEN_EXPIRE_MINUTES` | JWT access token lifetime in minutes |
+| `ANTHROPIC_API_KEY` | Anthropic API key |
 
 ## Running the Android App
 
 1. Open the `Android/` folder in Android Studio.
-2. Set the backend address in [BASE_URL LOCATION].
-3. Run on an emulator or a physical device.
+2. Run on an emulator or a physical device.
 
 ## Data Notice
 
 Student data, psychological assessment documents, and credentials are **not included** in this repository for privacy reasons.
-
-## License
-
-[MIT License / adjust]
