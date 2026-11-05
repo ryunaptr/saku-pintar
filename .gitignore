@@ -1,0 +1,16 @@
+.DS_Store
+.gradle/
+build/
+.idea/
+local.properties
+*.jks
+*.keystore
+*.apk
+*.aab
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+Backend/uploads/*
+!Backend/uploads/.gitkeep
